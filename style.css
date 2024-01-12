@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'veridianLogo';
+    src: url('/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --primary-text:#333333;
+    --secondary-text:#444444;
+    --light-text:#d1d1d1;
+    --form-background:var(--light-text);
+    --right-background: rgb(219, 216, 216);
+    --highlight-color: #9e0000;
+    --paragraph-size: 1.4rem;
+    --form-size: 1rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--primary-text);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left {
+    width: 40vw;
+    background-image: url(/img/ali-sedigh-moghadam-zla6FjYjfcU-unsplash.jpg);
+    background-position: center;
+    background-size: 100vh;
+}
+
+.logo {
+    font: 'veridianLogo';
+    font-size: 2.8rem;
+    position: relative;
+    color: var(--light-text);
+    top: 200px;
+    height: 250px;
+    width: 40vw;
+    background-color: #333333;
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.logo img, p {
+    position: relative;
+    z-index: 2;
+    opacity: 100%;
+    padding: 25px 10px 0px 10px;
+}
+
+
+.imgcredit {
+    position:absolute;
+    bottom: 5px;
+    color: var(--secondary-text);
+    width: 40%;
+    text-align: center;
+}
+
+.right {
+    width: auto;
+    background-color: var(--right-background);
+}
+
+.intro {
+    background-color: var(--right-background);
+}
