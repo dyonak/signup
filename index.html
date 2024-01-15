@@ -22,31 +22,30 @@
         <div class="signupform">
             <form action="">
                 <div class="signupfields">
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" />
+                    <label for="firstname">First Name
+                    <input type="text" name="firstname" id="firstname"/></label>
                     
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" />
+                    <label for="lastname">Last Name
+                    <input type="text" name="lastname" id="lastname"/></label>
                     
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" />
+                    <label for="email">Email Address
+                    <input autocomplete="email" name="email" id="email" required/></label>
                     
-                    <label for="phone">Phone Number</label>
-                    <input type="number" name="phone" />
+                    <label for="phone">Phone Number
+                    <input autocomplete="phone" type="number" name="phone" id="phone" /></label>
                     
-                    <label for="password"></label>
-                    <input type="password" name="password" required />
-                    
-                    <label for="confirmpassword"></label>
-                    <input type="password" name="confirmpassword" required />
+                    <label for="password">Password
+                    <input id='password' type="password" name="password" required /><div id="matchwarning">*Passwords do not match</div></label>
+
+                    <label for="confirmpassword">Confirm Password
+                    <input id='confirmpassword' type="password" name="confirmpassword" required /></label>
                 </div>
-                <div class="submitorlogin">
-                    <button type="submit"></button>
-                    <p>Already have an account? <a href="index.html">Log in.</a></p>
-                </div>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
+        <p>Already have an account? <a href="index.html">Log in.</a></p>
     </div>
     
 </body>
+<script src="main.js" defer></script>
 </html>
