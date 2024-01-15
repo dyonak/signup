@@ -81,10 +81,11 @@ body {
 }
 
 .signupfields {
-    font-size: large;
+    text-transform: uppercase;
+    font-size: small;
     color: var(--secondary-text);
     background-color: #eee;
-    box-shadow: 3px 3px 10px 6px var(--secondary-text);
+    box-shadow: 0 10px 10px 9px var(--secondary-text);
     padding: 30px 50px 30px 50px;
     display: flex;
     flex-direction:row;
@@ -109,15 +110,17 @@ input {
     border: 2px solid var(--light-text);
 }
 
-input:user-invalid {
+input:active, input:focus {
+    border: 2px solid rgb(50, 85, 150);
+    box-shadow: 0 0 4px rgb(50, 85, 150);
+    outline: none;
+    background-color: #ffffff;
+}
+
+input:invalid {
     border: solid 2px var(--highlight-color);
+    box-shadow: 0 0 4px var(--highlight-color);
 }
-
-input:focus {
-    border-color: #0d0080;
-    box-shadow: 0 0 13px rgba(34, 73, 158, 0.5);
-}
-
 
 #matchwarning {
     color: var(--highlight-color);
@@ -137,7 +140,9 @@ input:focus {
 }
 
 .signupform button:hover {
+    background-color:#500000;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 .right > p {
