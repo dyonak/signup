@@ -32,7 +32,7 @@ body {
 
 .left {
     width: 40vw;
-    background-image: url(img/ali-sedigh-moghadam-zla6FjYjfcU-unsplash.jpg);
+    background-image: url('img/ali-sedigh-moghadam-zla6FjYjfcU-unsplash.jpg');
     background-position: center;
     background-size: 100vh;
 }
